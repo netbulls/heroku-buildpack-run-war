@@ -17,4 +17,5 @@ install_java ${BUILD_DIR} ${javaVersion}
 echo "done"
 
 # download webapp-runner
-wget -O $BUILD_DIR/webapp-runner.jar http://search.maven.org/remotecontent?filepath=com/github/jsimone/webapp-runner/7.0.40.1/webapp-runner-7.0.40.1.jar
+curl --silent -o $BUILD_DIR/webapp-runner.jar http://search.maven.org/remotecontent?filepath=com/github/jsimone/webapp-runner/7.0.40.1/webapp-runner-7.0.40.1.jar
+echo "Downleaded webapp-runner"
