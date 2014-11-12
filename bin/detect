@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bin/use <build-dir>
+
+if [ -f $1/*war ]; then
+  echo "war binaries"
+  exit 0
+else
+  exit 1
+fi
